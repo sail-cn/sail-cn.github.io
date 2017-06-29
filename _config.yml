@@ -1,14 +1,14 @@
 # Site settings
 title: Yvan's Blog
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
+email: ios.sysail@gmail.com
+copyright_name: Yvan/Chope
+description: "Stay hungry! Stay foolish!"
 baseurl: ""
 url: "https://github.com/YanxiFeng/yanxifeng.github.io"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  StartBootstrap
+twitter_username: FengYanxi
+github_username:  YanxiFeng
+facebook_username:  fengyvan
 email_username:  ios.sysail@gmail.com
 
 # Google Analytics
