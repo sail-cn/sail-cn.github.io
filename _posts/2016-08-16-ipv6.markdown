@@ -1,0 +1,60 @@
+---
+layout: post
+title:  Mac搭建IPv6网络
+date:   2016-08-16 17:30:20
+author:  "Yvan"
+header-img: "img/post-bg-06.jpg"
+---
+从6月1日开始苹果要求之后审核的项目必须支持iPv6,如果不支持将被拒绝，最近一次审核被就被拒绝了....理由为下：
+
+Apps are reviewed on an IPv6 network. Please ensure that your app supports IPv6 networks, as IPv6 compatibility is required.
+![](http://7xqhpt.com1.z0.glb.clouddn.com/applestore_ipv6.png)
+
+找了几篇搭建IPv6网络的文章都不太满意,于是在自己解决之后整理一篇博客把经验借鉴给大家。
+
+##正题
+
+###材料:
+
+- 首先需要准备Mac一台
+
+- iPhone 2部(其中一部用于测试你的项目,请装上你的应用)
+
+- 连接线一根
+
+###第一步:通过数据线连接iphone和mac
+
+###第二步:打开iphone的个人热点并选择仅USB
+
+如果没有选项,请关闭手机连接的Wi-Fi,用手机自己的移动网络
+![](http://7xqhpt.com1.z0.glb.clouddn.com/iphone_personal_wifi.png)
+
+选择仅USB
+
+###第三步：打开网络偏好设置,确保你的Mac的Wi-Fi是打开的,并且没有连接任何网络
+
+如果已有连接wifi可以在高级里删除之前的联网缓存
+![](http://7xqhpt.com1.z0.glb.clouddn.com/make_sure_openwifi.png)
+
+###第四步：打开系统偏好设置,按住option(alt)键点击共享
+
+如果不按住option键将不会出现IPv6选项
+![](http://7xqhpt.com1.z0.glb.clouddn.com/system_option_ipv6.png)
+
+###第五步：选择iPhone USB -> Wi-Fi -> 创建NAT64
+
+如果没有出现创建NAT64网络请重复第四步
+![](http://7xqhpt.com1.z0.glb.clouddn.com/creat_nat64.png)
+
+###第六步:选择右下角的Wi-Fi选项,可以设置密码也可以不设置密码
+![](http://7xqhpt.com1.z0.glb.clouddn.com/creat_wifi.png)
+
+最后别忘了勾选左侧的选项,不然不会打开共享,显示互联网共享:打开代表操作成功
+![](http://7xqhpt.com1.z0.glb.clouddn.com/make_sure_select_nat64.png)
+
+勾选互联网共享
+
+用你另一台iPhone链接你Mac所创建的IPv6测试网络
+![](http://7xqhpt.com1.z0.glb.clouddn.com/phone_wifi_dns)
+
+如果你的DNS如上图所示的格式一样的话就代表你的IPv6测试环境已经搭建好了,可以开始测试你的项目了
