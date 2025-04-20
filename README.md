@@ -44,8 +44,4 @@
 ---
 
 ## ⭐️ 欢迎 Star & Watch
-Hello hi
 如果你觉得这些内容有帮助，欢迎点个 ⭐️ 支持一下！也欢迎一起讨论与成长 🙌
-Thanks~ Yvan
-Thanks~
-Yvan
