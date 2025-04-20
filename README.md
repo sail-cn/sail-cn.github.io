@@ -36,7 +36,7 @@
 
 ## 🧑‍💻 关于我
 
-一名热爱折腾的 iOS 开发者，关注代码整洁、性能优化和项目稳定性。  
+一名热爱折腾的 iOS 开发者，关注代码整洁、性能优化和项目稳定性。haha
 目前专注于使用 Bazel 提升构建效率，以及探索 SwiftUI 的实际落地应用。
 
 📫 欢迎交流：[@yourgithub](https://github.com/yourgithub)
